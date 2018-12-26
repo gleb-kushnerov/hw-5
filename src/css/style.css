@@ -1,0 +1,113 @@
+@media (max-width: 619px) {
+  .form-item {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+  form {
+    width: 90% !important; }
+  input:not([type="radio"]):not([type="checkbox"]),
+  select,
+  textarea,
+  fieldset {
+    width: 100% !important;
+    margin: 10px 0 0 0 !important; }
+  .fieldset-item {
+    display: flex;
+    justify-content: flex-start; } }
+
+@media (max-width: 320px) {
+  form {
+    width: 70% !important; }
+  .form-btn {
+    width: 100% !important; }
+    .form-btn button {
+      width: 100% !important; } }
+
+html {
+  height: 100%; }
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+:focus:not(button) {
+  outline: none;
+  border: 1px solid #e500ff !important; }
+
+form {
+  width: 70%;
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column; }
+  form .form-item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    flex: 1 1 auto; }
+    form .form-item input:not([type="radio"]):not([type="checkbox"]),
+    form .form-item select,
+    form .form-item textarea {
+      border: 1px solid #136dff;
+      box-sizing: border-box;
+      padding-left: 10px;
+      width: 70%;
+      height: 30px;
+      margin-left: 15px;
+      flex: 0 1 auto;
+      order: 1;
+      font-style: italic; }
+    form .form-item fieldset {
+      border: 1px solid #136dff;
+      box-sizing: border-box;
+      margin: 0;
+      width: 70%;
+      display: flex;
+      flex-direction: column; }
+      form .form-item fieldset div + div {
+        margin-top: 10px; }
+    form .form-item select {
+      padding-right: 10px;
+      font-style: normal;
+      -webkit-appearance: none;
+      background: url("../img/arrow.png") no-repeat 98% center; }
+    form .form-item textarea {
+      height: 100px;
+      resize: vertical; }
+    form .form-item .form-item-checkbox,
+    form .form-item .form-btn {
+      width: 70%; }
+      form .form-item .form-item-checkbox input,
+      form .form-item .form-btn input {
+        margin: 0 5px 0 0; }
+    form .form-item button {
+      margin-bottom: 40px;
+      width: 75%;
+      height: 30px;
+      border: none;
+      background-color: #0000FF;
+      color: #fff; }
+
+input[required] + label::after,
+textarea[required] + label::after {
+  content: '*';
+  color: red; }
+
+div + div {
+  margin-top: 20px; }
+
+#date::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none; }
+
+#date::-webkit-calendar-picker-indicator {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  color: transparent;
+  opacity: 1;
+  background: url("../img/calendar.svg") no-repeat top center;
+  background-size: contain; }

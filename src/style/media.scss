@@ -1,0 +1,41 @@
+@media (max-width: 619px) {
+  .form-item {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  form {
+    width: 90% !important;
+  }
+
+  input:not([type="radio"]):not([type="checkbox"]),
+  select,
+  textarea,
+  fieldset {
+
+    width: 100% !important;
+    margin: 10px 0 0 0 !important;
+  }
+
+  .fieldset-item {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 320px) {
+  form {
+    width: 70% !important;
+  }
+
+  .form-btn {
+    width: 100% !important;
+
+    button {
+      width: 100% !important;
+    }
+  }
+}
+
+

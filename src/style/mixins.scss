@@ -1,0 +1,10 @@
+@mixin border-1px-solid-black {
+  border: 1px solid #000;
+}
+
+@mixin border-1px-lblue {
+  border: 1px solid #136dff;
+
+}@mixin border-focus {
+  border: 1px solid #e500ff !important;
+}
